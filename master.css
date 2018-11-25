@@ -1,0 +1,138 @@
+
+#my_nav {
+    height: 100%;
+    width: 4rem;
+    position: fixed;
+    background-color: #2a2c3a;
+    
+}
+
+#my_nav #emblem {
+    border-bottom: 0.05rem solid /*#2b302e*/ #0e0e0e;
+}
+
+
+#my_nav a {
+    height: 5rem;
+    width: 4rem;
+    display: inline-block;
+    padding-top: 1.5rem;
+    transition: 0.3;
+}
+
+#my_nav a img {
+    width: 3rem;
+    display: block;
+    margin: auto;
+    opacity: 0.5;
+}
+
+#my_nav a img:hover {
+    opacity: 1;
+}
+
+#header_container {
+    /*background-image: url(Images/header/header_background_image.jpg);*/
+    background-color: rgb(13,43,119);
+    height: 100%;
+    color: #fff;
+    padding: 1rem 1.6rem;
+}
+
+#header_container #header_title {
+    padding-top: 1rem;
+    padding-left: 1.6rem;
+}
+
+#header_card {
+    background-color: rgba(31,31,33,0.8);
+    color: #fff;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    font-size: 18px;
+}
+
+#header_card p {
+    opacity: 1;
+}
+
+#header_card #my_header {
+    color: #da63ff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#unique_header_card {
+    
+}
+
+#unique_header_card #my_header {
+    text-align: left;
+}
+
+#unique_header_card .paragraph {
+    text-align: left;
+}
+
+/* Content */
+#content {
+    padding-left: 4rem;
+}
+
+.content_card {
+    padding: 1rem 1.6rem;
+}
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.gray {
+    background-color: gray;
+    color: white;
+}
+
+.dark_gray {
+    background-color: darkgray;
+    color: white;
+}
+
+#content_header {
+    font-size: 2rem;
+}
+
+
+#fake_nav_element {
+    margin: auto;
+}
+
+#fake_nav_element a {
+    display: inline-block;
+    margin: 1rem;
+}
+
+#fake_nav_element a img {
+    width: 9rem;
+}
+
+/* for mobile screens */
+@media screen and (max-height: 150px) {
+    /* navbar at the top */
+    #my_nav {
+        height: 4rem;
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+    
+    #my_nav #emblem {
+        border-bottom: none;
+    }
+    
+    #content {
+        padding: 0;
+    }
+}
