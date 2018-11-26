@@ -117,18 +117,18 @@
 }
 
 .white {
-    background-color: white;
-    color: black;
+    background-color: white !important;
+    color: black !important;
 }
 
 .gray {
-    background-color: gray;
-    color: white;
+    background-color: gray !important;
+    color: white !important;
 }
 
 .dark_gray {
-    background-color: darkgray;
-    color: white;
+    background-color: darkgray !important;
+    color: white !important;
 }
 
 .content_box {
@@ -163,6 +163,25 @@
 #fake_nav_element a img {
     width: 9rem;
 }
+/*
+@media screen and (min-height: 150px) {
+    .row {
+        display: -webkit-box !important;
+        display: -webkit-flex !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+    
+    .row > [class *= "col-"] {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .row:after, .row:before {
+        display: flex !important;
+    }
+}*/
 
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -219,4 +238,21 @@ form {
 
 #DublinGaelForce .col-md-6 img{
     float: right;
+}
+
+#resume_header {
+    /* use h4 */
+    font-weight: bold;
+    color: #07960c;
+}
+
+#resume_header2 {
+    /* use h6 */
+    font-weight: bold;
+    color: black;
+}
+
+#resume_date {
+    float: right;
+    color: gray;
 }

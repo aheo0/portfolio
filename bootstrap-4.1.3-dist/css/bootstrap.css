@@ -9036,6 +9036,7 @@ a.text-dark:hover, a.text-dark:focus {
  * Row with equal height columns
  * --------------------------------------------------
  */
+/*
 .row-eq-height {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9045,7 +9046,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /*
  * Styles copied from the Grid example to make grid rows & columns visible.
- */
+ 
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -9073,7 +9074,7 @@ h4 {
 /*
  * Callout styles copied from Bootstrap's main docs.
  */
-/* Common styles for all types */
+/* Common styles for all types 
 .bs-callout {
   padding: 20px;
   margin: 20px 0;
@@ -9090,7 +9091,7 @@ h4 {
   background-color: #fff;
   border-radius: 3px;
 }
-/* Variations */
+/* Variations 
 .bs-callout-danger {
   background-color: #fdf7f7;
   border-color: #d9534f;
@@ -9112,3 +9113,14 @@ h4 {
 .bs-callout-info h4 {
   color: #5bc0de;
 }
+
+/*---------------
+.row {
+    overflow: hidden;
+}
+
+[class*="col-"] {
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+*/

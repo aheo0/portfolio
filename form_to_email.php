@@ -1,5 +1,5 @@
 <?php
-
+/*
 // Validate
 $errors = '';
 $myemail = 'apollobest03@gmail.com';
@@ -34,10 +34,11 @@ $email_body = "There was a submission with ".
 
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
+*/
 
-mail($to,$email_subject,$email_body,$headers);
+mail("apollobest03@gmail.com","subject","email_body");
 
-header('Location: index.html');
-}
+header('Location: contacts_thank_you.html#Form');
+//}
 
 ?>
