@@ -8,6 +8,9 @@
         <title>Contact Me</title>
         <link rel="shortcut icon" type="image/png" href="Images/personal/my_logo_emblem.png"/>
         
+        <!-- Bootstrap JQuery and Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        
         <!-- JavaScript -->
         <script src="main.js"></script>
         
@@ -67,67 +70,40 @@
             <!-- Main Content -->
             <!-- Nav Elements -->
             <div class="content_card">
-                <div id="fake_nav_element">
-                    <a id="emblem" href="index.html">
-                        <img src="Images/personal/my_logo_emblem.png" alt="Logo: Apollo Heo"/>
-                    </a>
-                    <a href="index.html">
-                        <img src="Images/header/home_icon.png" alt="Home"/>
-                    </a>
-                    <a href="about_me.html">
-                        <img src="Images/header/about_me_icon_default.png" alt="About Me"/>
-                    </a>
-                    <a href="resume.html">
-                        <img src="Images/header/resume_icon.png" alt="Resume"/>
-                    </a>
-                    <a href="projects.html">
-                        <img src="Images/header/project_icon.png" alt="Projects"/>
-                    </a>
-                    <a href="index.html#Location">
-                        <img src="Images/header/location_icon.png"alt="Location"/>
-                    </a>
-                    <a href="contacts.html">
-                        <img src="Images/header/contacts_icon.png" alt="Contact Me"/>
-                    </a>
-                </div>
+                <p>Feel free to...</p>
+                <ul>
+                    <li>ask me a clarifying question on any content on my website</li>
+                    <li>ask me a personal question that may not relate to my website</li>
+                    <li>send me comments or suggestions about my website</li>
+                </ul>
+                <p>*Note all fields are required.</p>
             </div>
             
             <!-- Contact Me Form -->
             <div class="gray content_card">
                 <h1 id="content_header">Form Submission</h1>
                 <div class="content_box">
-                    <form name="contacts_form" action="form_to_email.php" 
-                    onsubmit="return validate_form()" method="post">
-                        Name:<br/>
-                        <input type="text" name="name" placeholder="First Last" required/><br/>
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScIgCdXdRA0h5B7SA2CLRodjk_O7y72ROB7pDfZcWiZc6j7tA/formResponse?usp=sf_link"
+                    target="hide_form" onsubmit="submitted=true;">
+                        Name: <span>* required</span><br/>
+                        <input type="text" name="entry.2005620554" id="entry.2005620554" placeholder="First Last" required/><br/>
                         <br/>
                         
-                        Enter Email:<br/>
-                        <input type="email" name="email" placeholder="someone@example.com" required/><br/>
+                        Enter Email: <span>* required</span><br/>
+                        <input type="email" name="entry.1045781291" id="entry.1045781291" placeholder="someone@example.com" required/><br/>
                         <br/>
                         
-                        Rate My Website!<br/>
-                        <input type="radio" name="website_poll" value="1" required/>  1<br/>
-                        <input type="radio" name="website_poll" value="2"/>  2<br/>
-                        <input type="radio" name="website_poll" value="3"/>  3<br/>
-                        <input type="radio" name="website_poll" value="4"/>  4<br/>
-                        <input type="radio" name="website_poll" value="5"/>  5<br/>
-                        <input type="radio" name="website_poll" value="6"/>  6<br/>
-                        <input type="radio" name="website_poll" value="7"/>  7<br/>
-                        <input type="radio" name="website_poll" value="8"/>  8<br/>
-                        <input type="radio" name="website_poll" value="9"/>  9<br/>
-                        <input type="radio" name="website_poll" value="10"/>  10<br/>
-                        <br/>
-                        
-                        Leave Comments<br/>
-                        <textarea name="comments" rows="6" cols="40" 
+                        Leave Comments <span>* required</span><br/>
+                        <textarea name="entry.839337160" id="entry.839337160" rows="6" cols="40" 
                         placeholder="Type here" required></textarea>
                         <br/>
                         
                         <br/>
-                        <input type="submit" value="press send if you dare..."/><br/>
+                        <input type="submit" value="Submit"/><br/>
                         <br/>
                     </form>
+                    <!-- iframe to prevent redirect to Google Forms -->
+                    <iframe name="hide_form" id="hide_form" onload="if(submitted) {}"></iframe>
                 </div>
             </div>
         </div>
@@ -137,6 +113,12 @@
         
         <!-- Test Footer -->
         
-        
+        <script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Your submission has been processed...');
+  });
+</script>
     </body>
 </html>
