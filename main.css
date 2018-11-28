@@ -214,9 +214,6 @@ form {
 /*-------------------------------- Miscellaneous -----------------------------*/
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
-#DublinGaelForce {
-    padding-right: 5rem;
-}
 #DublinGaelForce .col-md-6 {
     height: 450px;
 }
@@ -227,6 +224,10 @@ form {
 
 #DublinGaelForce .col-md-6 img {
     float: right;
+}
+
+#DublinGaelForce .col-md-6 iframe {
+    width: 100%;
 }
 
 #resume_header {
@@ -251,7 +252,7 @@ form {
 /*------------------------------- Mobile Screens -----------------------------*/
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 750px) {
     /* navbar at the top */
     #p {
         font-size: 5px !important;
@@ -259,8 +260,9 @@ form {
     
     #my_nav {
         height: 4rem !important;
-        width: 100% !important;
-        overflow: hidden !important;
+        width: 50rem !important;
+        overflow: auto !important;
+        padding: 0.5rem 2rem;
     }
     
     #my_nav a {
@@ -304,5 +306,9 @@ form {
 
     #DublinGaelForce .col-md-6 img {
         
+    }
+    
+    #DublinGaelForce .col-md-6 iframe {
+        width: 100% !important;
     }
 }
