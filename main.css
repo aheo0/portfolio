@@ -8,6 +8,7 @@
     width: 4rem;
     position: fixed;
     background-color: /*#2a2c3a*/ #171a1e;
+    z-index: 2;
     
 }
 
@@ -189,32 +190,6 @@
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 
-/*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*/
-/*------------------------------- Mobile Screens -----------------------------*/
-/*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*/
-@media screen and (max-width: 750px) {
-    /* navbar at the top */
-    #p {
-        font-size: 5px !important;
-    }
-    
-    #my_nav {
-        height: 4rem;
-        width: 100%;
-        position: static;
-        height: auto;
-    }
-    
-    #my_nav #emblem {
-        border-bottom: none;
-    }
-    
-    #content {
-        padding: 0;
-    }
-}
 
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -242,12 +217,15 @@ form {
 #DublinGaelForce {
     padding-right: 5rem;
 }
-#DublinGaelForce .col-md-6{
+#DublinGaelForce .col-md-6 {
     height: 450px;
+}
+
+#DublinGaelForce #left {
     border-right: 0.3rem solid darkgray;
 }
 
-#DublinGaelForce .col-md-6 img{
+#DublinGaelForce .col-md-6 img {
     float: right;
 }
 
@@ -266,4 +244,65 @@ form {
 #resume_date {
     float: right;
     color: gray;
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*------------------------------- Mobile Screens -----------------------------*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+    /* navbar at the top */
+    #p {
+        font-size: 5px !important;
+    }
+    
+    #my_nav {
+        height: 4rem !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+    
+    #my_nav a {
+        display: inline !important;
+    }
+    
+    #my_nav a img {
+        display: inline !important;
+    }
+    
+    #my_nav #emblem {
+        border-bottom: none;
+    }
+    
+    #my_nav #home {
+        display: none;
+    }
+    
+    #content {
+        padding-left: 0;
+        padding-top: 4rem;
+    }
+    
+    #content_box {
+        padding: 0;
+    }
+    
+    #DublinGaelForce {
+        padding-right: 0;
+    }
+    
+    #DublinGaelForce #left {
+        border-right: none;
+    }
+    
+    #DublinGaelForce .col-md-6 {
+        height: auto !important;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #DublinGaelForce .col-md-6 img {
+        
+    }
 }
