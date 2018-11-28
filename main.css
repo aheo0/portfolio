@@ -1,3 +1,7 @@
+img {
+    width: auto;
+}
+
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 /*--------------------------------- Navigation -------------------------------*/
@@ -7,13 +11,13 @@
     height: 100%;
     width: 4rem;
     position: fixed;
-    background-color: /*#2a2c3a*/ #171a1e;
+    background-color: #171a1e;
     z-index: 2;
     
 }
 
 #my_nav #emblem {
-    border-bottom: 0.05rem solid /*#2b302e*/ #0e0e0e;
+    border-bottom: 0.05rem solid #0e0e0e;
 }
 
 
@@ -22,7 +26,6 @@
     width: 4rem;
     display: inline-block;
     padding-top: 1.5rem;
-    transition: 0.3;
 }
 
 #my_nav a img {
@@ -218,7 +221,7 @@ form {
     height: 450px;
 }
 
-#DublinGaelForce #left {
+#DublinGaelForce .left {
     border-right: 0.3rem solid darkgray;
 }
 
@@ -254,28 +257,40 @@ form {
 /*----------------------------------------------------------------------------*/
 @media screen and (max-width: 750px) {
     /* navbar at the top */
-    #p {
-        font-size: 5px !important;
+    p {
+        font-size: 10px !important;
+    }
+    
+    h1 {
+        font-size: 28px !important;
+    }
+    
+    a {
+        font-size: 10px;
     }
     
     #my_nav {
-        box-sizing: content-box;
-        height: 3rem !important;
-        width: 50rem !important;
+        box-sizing: border-box;
+        height: 5rem !important;
+        width: 100% !important;
+        white-space: nowrap;
         overflow: auto !important;
-        padding: 1rem 2rem;
+        overflow-y: hidden;
+        padding-top: 0.5rem;
     }
     
     #my_nav a {
         display: inline !important;
-    }
-    
-    #my_nav a img {
-        display: inline !important;
+        margin-left: 0.5rem;
     }
     
     #my_nav #emblem {
         border-bottom: none;
+    }
+    
+    #my_nav a img {
+        display: inline !important;
+        height: auto;
     }
     
     #my_nav #home {
@@ -284,32 +299,34 @@ form {
     
     #content {
         padding-left: 0;
-        padding-top: 4rem;
+        padding-top: 5rem;
     }
     
     #content_box {
-        padding: 0;
+        padding: 0 !important;
+    }
+    
+    #content_box .content_card {
+        margin: 0 !important;
     }
     
     #DublinGaelForce {
         padding-right: 0;
     }
     
-    #DublinGaelForce #left {
+    #DublinGaelForce .left {
         border-right: none;
+        margin-bottom: 2rem;
     }
     
     #DublinGaelForce .col-md-6 {
         height: auto !important;
         width: 100%;
-        margin-bottom: 2rem;
     }
 
-    #DublinGaelForce .col-md-6 img {
-        
-    }
     
     #DublinGaelForce .col-md-6 iframe {
+        height: 100%;
         width: 100% !important;
     }
 }
