@@ -277,7 +277,7 @@ form {
         overflow-x: scroll !important;
         -webkit-overflow-scrolling: touch;
         overflow-y: hidden;
-        padding-top: 0.5rem;
+        padding: 0.5rem 0.8rem 0 0.8rem;
     }
     
     #my_nav a {
