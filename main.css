@@ -274,7 +274,8 @@ form {
         height: 5rem !important;
         width: 100% !important;
         white-space: nowrap;
-        overflow: auto !important;
+        overflow-x: scroll !important;
+        -webkit-overflow-scrolling: touch;
         overflow-y: hidden;
         padding-top: 0.5rem;
     }
