@@ -7,6 +7,9 @@
         
         <title>Contact Me</title>
         <link rel="shortcut icon" type="image/png" href="Images/personal/my_logo_emblem.png"/>
+
+        <!-- JavaScript -->
+        <script src="main.js"></script>
         
         <!-- Bootstrap JQuery and Popper.js -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -76,24 +79,25 @@
                     <li>ask me a personal question that may not relate to my website</li>
                     <li>send me comments or suggestions about my website</li>
                 </ul>
-                <p>*Note all fields are required.</p>
+                <p class="required" style="color: red;">*Note all fields are required.</p>
             </div>
             
             <!-- Contact Me Form -->
-            <div class="gray content_card">
+            <div name="Form_Submission" class="gray content_card">
                 <h1 id="content_header">Form Submission</h1>
                 <div class="content_box">
-                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScIgCdXdRA0h5B7SA2CLRodjk_O7y72ROB7pDfZcWiZc6j7tA/formResponse?usp=sf_link"
-                    target="hide_form" onsubmit="submitted=true;">
-                        Name: <span>* required</span><br/>
+                    <!-- Form -->
+                    <form id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScIgCdXdRA0h5B7SA2CLRodjk_O7y72ROB7pDfZcWiZc6j7tA/formResponse?usp=sf_link"
+                    target="hide_form" onsubmit="form_thank_you()">
+                        Name: <span class="required" style="color: red;">*</span><br/>
                         <input type="text" name="entry.2005620554" id="entry.2005620554" placeholder="First Last" required/><br/>
                         <br/>
                         
-                        Enter Email: <span>* required</span><br/>
+                        Enter Email: <span class="required" style="color: red;">*</span><br/>
                         <input type="email" name="entry.1045781291" id="entry.1045781291" placeholder="someone@example.com" required/><br/>
                         <br/>
                         
-                        Leave Comments <span>* required</span><br/>
+                        Leave Comments <span class="required" style="color: red;">*</span><br/>
                         <textarea name="entry.839337160" id="entry.839337160" rows="6" cols="40" 
                         placeholder="Type here" required></textarea>
                         <br/>
@@ -102,23 +106,17 @@
                         <input type="submit" value="Submit"/><br/>
                         <br/>
                     </form>
+                    
+                    <!-- form_thank_you -->
+                    <div id="thank_you4form">
+                        <h6 id="resume_header">Thank You</h6>
+                        <p>Your form has been submitted.</p>
+                    </div>
+                    
                     <!-- iframe to prevent redirect to Google Forms -->
                     <iframe name="hide_form" id="hide_form" onload="if(submitted) {}"></iframe>
                 </div>
             </div>
         </div>
-            
-        <!-- Footer -->
-        <!-- make it fixed at the bottom ..> overlap ontop of the vertical navbar-->
-        
-        <!-- Test Footer -->
-        
-        <script type="text/javascript">var submitted=false;</script>
-<script type="text/javascript">
-$('#gform').on('submit', function(e) {
-  $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
-  });
-</script>
     </body>
 </html>
