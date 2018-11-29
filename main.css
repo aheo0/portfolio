@@ -86,10 +86,6 @@ img {
     font-size: 20px;
 }
 
-#unique_header_card {
-    
-}
-
 #my_center {
     text-align: center;
 }
@@ -229,6 +225,7 @@ textarea {
 }
 
 #thank_you4form {
+    display: none;
     width: 300px;
     margin: 0 auto !important;
 }
@@ -277,7 +274,7 @@ textarea {
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
 @media screen and (max-width: 750px) {
-    /* navbar at the top */
+    /* navbar at the top 
     p {
         font-size: 10px !important;
     }
@@ -288,7 +285,7 @@ textarea {
     
     a {
         font-size: 10px;
-    }
+    }*/
     
     #my_nav {
         box-sizing: border-box;
@@ -346,7 +343,4 @@ textarea {
         width: 100%;
     }
 
-    
-    #DublinGaelForce .col-md-6 iframe {
-    }
 }
