@@ -225,9 +225,14 @@ textarea {
 }
 
 #thank_you4form {
+    width: 280px;
+    margin: 0 auto;
     display: none;
-    width: 300px;
-    margin: 0 auto !important;
+}
+
+#form_info {
+    width: 530px;
+    margin: 0 auto;
 }
 
 /*----------------------------------------------------------------------------*/
