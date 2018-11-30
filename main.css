@@ -98,7 +98,7 @@
 }
 
 #header_card #my_header {
-    color: #da63ff;
+    color: /*trying a new color #da63ff*/ lightblue;
     font-weight: bold;
     font-size: 20px;
 }
