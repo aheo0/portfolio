@@ -8,13 +8,6 @@
         <title>Apollo Heo's Online Portfolio</title>
         <link rel="shortcut icon" type="image/png" href="Images/personal/my_logo_emblem.png"/>
         
-        <!-- Bootstrap JQuery and Popper.js 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        -->
-        <!-- Bootstrap 4.1.3 JavaScript 
-        <script src="bootstrap-4.1.3-dist/js/bootstrap.js"></script>
-        -->
         <!-- JavaScript -->
         <script src="main.js"></script>
         
@@ -27,14 +20,17 @@
     <body>
         <!-- Navigation -->
         <div id="my_nav">
-            <a id="emblem" href="index.html">
-                <img src="Images/personal/my_logo_emblem.png" alt="Logo: Apollo Heo"/>
+            <a id="emblem" href=".">
+                <img src="Images/personal/my_logo_emblem.png" 
+                alt="Logo: Apollo Heo"/>
             </a>
-            <a id="home" href="home.html">
-                <img id="nav_active" src="Images/header/home_icon.png" alt="Home"/>
+            <a id="home" href=".">
+                <img id="nav_active" src="Images/header/home_icon.png" 
+                alt="Home"/>
             </a>
             <a href="about_me.html">
-                <img src="Images/header/about_me_icon_default.png" alt="About Me"/>
+                <img src="Images/header/about_me_icon.png" 
+                alt="About Me"/>
             </a>
             <a href="resume.html">
                 <img src="Images/header/resume_icon.png" alt="Resume"/>
@@ -50,11 +46,36 @@
             </a>
         </div>
         
+        <!-- Hidden Nav 
+        -- supposed to tell user what each navbar image represents --
+        might use data-tooltip in the future;
+        might create own boxes to put information;
+        might keep current design w/o "tooltip"'s
+        *must use data-tooltip="home", etc.
+        <div id="hidden">
+            <div id="home">
+                <p>Home</p>
+            </div>
+            <div id="about_me">
+                <p>About Me</p>
+            </div>
+            <div id="projects">
+                <p>Projects</p>
+            </div>
+            <div id="location">
+                <p>Location</p>
+            </div>
+            <div id="contacts">
+                <p>Contact Me</p>
+            </div>
+        </div> -->
+        
         <!-- Content -->
         <div id="content">
             <!-- Header -->
             <div id="header_container">
-                <h1 id="header_title">Welcome to Apollo Heo's Online Portfolio</h1>
+                <h1 id="header_title">Welcome to Apollo Heo's Online 
+                Portfolio</h1>
                 <div class="row">
                     <div class="col-md-9" id="unique_header_card">
                         <div id="header_card">
@@ -65,62 +86,111 @@
                             to Dublin High School as a freshman with aspiring 
                             hopes and goals for the 4 years I will be spending 
                             in high school.</p>
-                            <a class="paragraph" href="about_me.html">Continue reading ...</a>
+                            <a class="paragraph" href="about_me.html">Continue 
+                            reading ...</a>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div id="header_card">
-                            <p id="my_header">Have any Questions?</p>
+                            <p id="my_header">Have Any Questions?</p>
                             <img src="Images/header/contacts_icon.png"/>
-                            <p>Contact Me</p>
+                            <a class="paragraph" href="contacts.html">Contact 
+                            Me</a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- Main Content -->
-            <!-- Nav Elements -->
-            <div class="content_card">
-                <div id="fake_nav_element">
-                    <a id="emblem" href="index.html">
-                        <img src="Images/personal/my_logo_emblem.png" alt="Logo: Apollo Heo"/>
-                    </a>
-                    <a href="index.html">
-                        <img src="Images/header/home_icon.png" alt="Home"/>
-                    </a>
-                    <a href="about_me.html">
-                        <img src="Images/header/about_me_icon_default.png" alt="About Me"/>
-                    </a>
-                    <a href="resume.html">
-                        <img src="Images/header/resume_icon.png" alt="Resume"/>
-                    </a>
-                    <a href="projects.html">
-                        <img src="Images/header/project_icon.png" alt="Projects"/>
-                    </a>
-                    <a href="#Location">
-                        <img src="Images/header/location_icon.png" alt="Location"/>
-                    </a>
-                    <a href="contacts.html">
-                        <img src="Images/header/contacts_icon.png" alt="Contact Me"/>
-                    </a>
-                </div>
-            </div>
-            
             <!-- Projects -->
             <div class="gray content_card">
                 <h1 id="content_header">Projects</h1>
+                <div class="content_box">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="lightgray content_card">
+                                        <h4 id="project_header">Scratch</h4>
+                                    </div>
+                                    <img id="home_project" src="Images/project/scratch-image.png" 
+                                    alt="Scratch"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="lightgray content_card"></div>
+                            <img id="home_project" src="Images/project/scratch-24-hours-to-die.png" 
+                            alt="Scratch"/>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="lightgray content_card">
+                                        <h4 id="project_header2">24 Hours to 
+                                        Die</h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <p id="home_project">The object for our 
+                                    Scratch project was to create either a story 
+                                    or a game with my partner, Josh Koh, that 
+                                    demonstrates our knowledge of programming 
+                                    fundamentals and our ability to use the 
+                                    Scratch interface. In the beginning, Josh 
+                                    and I concluded that we wanted to create a 
+                                    story with user inputs—like a “Choose Your 
+                                    Own Adventure” type. In our Scratch story 
+                                    code, we also displayed our creativity with 
+                                    not only the story outline but with the 
+                                    effect we added to the buttons the user 
+                                    clicks on to input their choice in between 
+                                    scenes.</p>
+                                    <p id="home_project"><a href="projects.html">
+                                    View project page for more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+            <!-- a way to display multiple projects on home page;
+                 need more projects
+            <div class="gray content_card">
+                <div class="lightgray content_box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="quotes_screenshot" 
+                            class="white content_card">
+                                <img src="Images/project/scratch-24-hours-to-die.png"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="quotes_quotes" class="white content_card">
+                                <p>"Best Game EVER"</p>
+                                <p>"So funny and unexpected! The storyline is 
+                                pretty unique, in a good way! :)"</p>
+                                <p>"So many endings in creative ways"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
             
             <!-- Location -->
             <div class="white content_card">
                 <h1 id="content_header"><a name="Location">Location</a></h1>
-                <p>I attend Dublin High School—located in Dublin, California. 
-                Geographically, the city lies in the eastern part of the 
-                San Francisco Bay Area. </p>
                 <div class="content_box">
                     <div class="white content_card">
                         <div id="DublinGaelForce" class="row">
-                            <div class="col-md-6 left" >
+                            <div class="col-md-4" >
+                                <p id="quotes_quotes">I attend Dublin High 
+                                School—located in Dublin, California. 
+                                Geographically, the city lies in the eastern 
+                                part of the San Francisco Bay Area.</p>
+                            </div>
+                            <div class="col-md-2 left">
                                 <a href="https://www.dublin.k12.ca.us/dhs">
                                     <img src="Images/footer/dublin-gael-force-logo.png"/>
                                 </a>
@@ -132,14 +202,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
-            
-        <!-- Footer -->
-        <!-- make it fixed at the bottom -->
-        
-        <!-- Test Footer -->
-        
-        
     </body>
 </html>

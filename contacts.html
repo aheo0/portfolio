@@ -11,7 +11,7 @@
         <!-- JavaScript -->
         <script src="main.js"></script>
         
-        <!-- Bootstrap JQuery and Popper.js -->
+        <!-- Bootstrap JQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         
         <!-- JavaScript -->
@@ -26,14 +26,15 @@
     <body>
         <!-- Navigation -->
         <div class="flex-sm-col" id="my_nav">
-            <a id="emblem" href="index.html">
-                <img src="Images/personal/my_logo_emblem.png" alt="Logo: Apollo Heo"/>
+            <a id="emblem" href=".">
+                <img src="Images/personal/my_logo_emblem.png" 
+                alt="Logo: Apollo Heo"/>
             </a>
-            <a href="index.html">
+            <a href=".">
                 <img src="Images/header/home_icon.png" alt="Home"/>
             </a>
             <a href="about_me.html">
-                <img src="Images/header/about_me_icon_default.png" alt="About Me"/>
+                <img src="Images/header/about_me_icon.png" alt="About Me"/>
             </a>
             <a href="resume.html">
                 <img src="Images/header/resume_icon.png" alt="Resume"/>
@@ -45,7 +46,8 @@
                 <img src="Images/header/location_icon.png" alt="Location"/>
             </a>
             <a href="contacts.html">
-                <img id="nav_active" src="Images/header/contacts_icon.png" alt="Contact Me"/>
+                <img id="nav_active" src="Images/header/contacts_icon.png" 
+                alt="Contact Me"/>
             </a>
         </div>
         
@@ -63,7 +65,8 @@
                                 <span class="paragraph">Apollo Heo</span>
                                 <br/>
                                 <span id="my_header">Email:</span> 
-                                <span class="paragraph">apollobest03@gmail.com</span>
+                                <span class="paragraph">
+                                apollobest03@gmail.com</span>
                             </p>
                         </div>
                     </div>
@@ -73,13 +76,16 @@
             <!-- Main Content -->
             <!-- Nav Elements -->
             <div id="form_info" class="content_card">
-                <h6 id="resume_header2">Feel free to...</h6>
+                <h6 id="resume_header2" class="add_top">Feel free to...</h6>
                 <ul>
-                    <li>ask me a clarifying question on any content on my website</li>
-                    <li>ask me a personal question that may not relate to my website</li>
+                    <li>ask me a clarifying question on any content on my 
+                    website</li>
+                    <li>ask me a personal question that may not relate to my 
+                    website</li>
                     <li>send me comments or suggestions about my website</li>
                 </ul>
-                <p class="required" style="color: red;">*Note all fields are required.</p>
+                <p class="required" style="color: red;">*Note all fields are 
+                required.</p>
             </div>
             
             <!-- Contact Me Form -->
@@ -89,17 +95,25 @@
                     <!-- Form -->
                     <form id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScIgCdXdRA0h5B7SA2CLRodjk_O7y72ROB7pDfZcWiZc6j7tA/formResponse?usp=sf_link"
                     target="hide_form" onsubmit="form_thank_you()">
-                        Name: <span class="required" style="color: red;">*</span><br/>
-                        <input type="text" name="entry.2005620554" id="entry.2005620554" placeholder="First Last" required/><br/>
+                        Name: <span class="required" style="color: red;">*
+                        </span><br/>
+                        <input type="text" name="entry.2005620554" 
+                        id="entry.2005620554" placeholder="First Last" 
+                        required/><br/>
                         <br/>
                         
-                        Enter Email: <span class="required" style="color: red;">*</span><br/>
-                        <input type="email" name="entry.1045781291" id="entry.1045781291" placeholder="someone@example.com" required/><br/>
+                        Enter Email: <span class="required" style="color: red;">
+                        *</span><br/>
+                        <input type="email" name="entry.1045781291" 
+                        id="entry.1045781291" placeholder="someone@example.com" 
+                        required/><br/>
                         <br/>
                         
-                        Leave Comments <span class="required" style="color: red;">*</span><br/>
-                        <textarea name="entry.839337160" id="entry.839337160" rows="6" cols="40" 
-                        placeholder="Type here" required></textarea>
+                        Leave Comments <span class="required" 
+                        style="color: red;">*</span><br/>
+                        <textarea name="entry.839337160" id="entry.839337160" 
+                        rows="6" cols="40" placeholder="Type here" required>
+                        </textarea>
                         <br/>
                         
                         <br/>
@@ -114,7 +128,8 @@
                     </div>
                     
                     <!-- iframe to prevent redirect to Google Forms -->
-                    <iframe name="hide_form" id="hide_form" onload="if(submitted) {}"></iframe>
+                    <iframe name="hide_form" id="hide_form" 
+                    onload="if(submitted) {}"></iframe>
                 </div>
             </div>
         </div>
