@@ -25,3 +25,20 @@ function form_thank_you () {
     document.getElementById('thank_you4form').style.display = 'block';
     document.getElementById('form_info').style.display = 'none';
 }
+
+/* Location Navbar */
+function nav_script () {
+    document.getElementById('LocationNav').style.opacity = '0.3';
+    var DivTop = $("#aboveLocation").offset().top;
+    if($(window).scrollTop() > DivTop) {
+            document.getElementById('LocationNav').style.opacity = 1;
+        }
+    $(window).scroll(function() {
+        if($(window).scrollTop() > DivTop) {
+            document.getElementById('LocationNav').style.opacity = 1;
+        }
+        if($(window).scrollTop() < DivTop) {
+            document.getElementById('LocationNav').style.opacity = 0.3;
+        }
+    });
+}
