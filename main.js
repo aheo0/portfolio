@@ -39,6 +39,10 @@ function nav_script () {
         }
         if($(window).scrollTop() < DivTop) {
             document.getElementById('LocationNav').style.opacity = 0.3;
+            
+            document.getElementById(('LocationNav')).mouseover(function() {
+                document.getElementById('LocationNav').style.opacity = 1;
+            });
         }
     });
 }

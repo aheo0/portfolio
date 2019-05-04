@@ -210,6 +210,7 @@
 .scratch_embed {
     display: block;
     margin: 0 auto;
+    overflow: hidden !important;
 }
 
 
@@ -312,6 +313,10 @@ textarea {
     display: block;
     float: right;
     padding: 1.6rem !important;
+}
+
+#quotes_screenshot img {
+    max-width: 100%;
 }
 
 #quotes_quotes {
